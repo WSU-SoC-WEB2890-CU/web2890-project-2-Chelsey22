@@ -1,0 +1,108 @@
+$dark-red: rgb(181, 69, 69);
+$bg-sticker: rgb(187, 185, 185);
+$bg-black: #000000;
+$txt-white: #ffffff;
+
+$primary-font: Copperplate, Copperplate Gothic Light;
+
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lilita+One&display=swap");
+@import "bootstrap/scss/bootstrap.scss";
+
+header {
+  font-family: $primary-font;
+
+  span {
+    font-family: sans-serif;
+  }
+}
+
+h2,
+p {
+  font-family: $primary-font;
+}
+
+.btn {
+  border: 1px solid $dark-red;
+  color: $txt-white;
+
+  &:hover {
+    border: 2px solid $dark-red;
+    background-color: $txt-white;
+    color: $bg-black;
+  }
+}
+
+.border {
+  position: relative;
+  height: 4px;
+  background-color: $dark-red;
+  margin: 2rem 0;
+}
+
+.stickers {
+  background-color: $bg-sticker;
+}
+
+.product-card {
+  background-color: $bg-black;
+  color: $txt-white;
+  .card-body {
+    background-color: $bg-black;
+  }
+
+  h6,
+  p {
+    font-family: sans-serif;
+  }
+}
+
+.shirt-flip-container {
+  perspective: 1000px;
+  width: 250px;
+  margin: 2rem auto;
+
+  .shirt-flip-card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+    &.flipped {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .shirt-flip-front,
+  .shirt-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .shirt-flip-front img,
+  .shirt-flip-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .shirt-flip-back {
+    transform: rotateY(180deg);
+  }
+
+  .shirt-btn {
+    border: 2px solid $dark-red;
+    background-color: $bg-black;
+    color: $txt-white;
+
+    &:hover {
+      border: 2px solid $dark-red;
+      background-color: $txt-white;
+      color: $bg-black;
+    }
+  }
+}

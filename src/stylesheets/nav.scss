@@ -1,0 +1,30 @@
+//variables
+$red-primary: #960505;
+$bg-black: #000000;
+$primary-font: Copperplate, Copperplate Gothic Light;
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lilita+One&display=swap");
+
+.navbar {
+  background-color: $bg-black;
+  font-family: $primary-font;
+  position: sticky;
+  top: 0;
+
+  a {
+    color: $white;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $red-primary;
+    }
+  }
+}
