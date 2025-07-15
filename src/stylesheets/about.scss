@@ -5,24 +5,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
 
-.bg-overlay {
-  background: url("../images/trees.jpeg") no-repeat center center fixed;
-  background-size: cover;
-
-  &::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
-}
-
-h1, p{
-    color: white;
+h1,
+p {
+  color: black;
 }

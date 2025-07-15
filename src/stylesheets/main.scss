@@ -85,6 +85,10 @@ body {
     border-radius: 12px;
   }
 
+  a {
+    text-decoration-line: none;
+    color: white;
+  }
   .btn {
     &:hover {
       background-color: $btn-black;
@@ -223,4 +227,3 @@ body {
     color: $txt-white;
   }
 }
-
