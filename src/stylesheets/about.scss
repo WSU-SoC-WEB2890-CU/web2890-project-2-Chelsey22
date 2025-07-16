@@ -1,14 +1,39 @@
 @import "bootstrap/scss/bootstrap.scss";
+$primary-font: Copperplate, Copperplate Gothic Light;
 
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-
 }
 
-h1,
-p {
-  color: black;
+
+.portrait {
+  float: left;
+  margin: 2rem;
+  max-width: 300px;
+
+  img.self-image {
+    width: 75%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
 }
+
+.about {
+  overflow: hidden;
+
+  h1 {
+    font-family: $primary-font;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+}
+
