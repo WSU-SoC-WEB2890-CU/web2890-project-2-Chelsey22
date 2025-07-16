@@ -1,28 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fear The Paranormal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Project 2 ..." />
 
-<head>
-  <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Project 2 ...">
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
 
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+  <div class="bg-overlay">
+    <nav class="navbar navbar-expand-lg text-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-3" href="#">
+          <img src="images/logo-4.jpg" alt="Fear the paranormal logo" />
+        </a>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link active link-header h4" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-header h4" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-header h4" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-header h4" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero align-items-center text-white text-center">
+      <div class="container position-relative hero-overlay z-1">
+        <h1 class="display-2 fw-bold text-shadow mb-3">Fear the Paranormal</h1>
+        <p class="lead text-shadow">
+          Dare to step into the unknown. Real encounters. Haunted places. Unseen forces that reside in the dark.
+        </p>
+        <a href="about.html" class="btn btn-outline-light btn-lg mt-4">Begin Your Descent</a>
+      </div>
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+    </header>
+
+    <main>
+      <section class="products-carousel mt-8 py-5">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold">Peek Our Products</h2>
+
+          <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img src="images/deadphone.jpg" class="d-block w-100 carousel-img" alt="Spirit Box" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/jason_table.jpeg" class="d-block w-100 carousel-img"
+                  alt="Handmade Jason Coffee Table" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/stevie_ruth_doll.jpeg" class="d-block w-100 carousel-img" alt="Haunted Doll" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/catball_ouija.jpeg" class="d-block w-100 carousel-img"
+                  alt="Spirit Board made of Catballs" />
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="text-center mt-4">
+            <a href="products.html" class="btn btn-outline-light btn-lg">See All</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlight-section">
+        <div class="border"></div>
+
+        <div class="highlight fw-bold">
+          <p class="lead mb-5 m-5 text-center">
+            Do you believe in the paranormal? Do you believe in aliens? Or something that ultimately cannot be explained?
+            If so, you have found your place. Follow along, watch and subscribe to our channel to decide for yourselves...
+          </p>
+        </div>
+
+        <article class="youtube text-center my-5">
+          <h2 class="youtube-heading mb-4">
+            <a class="youtube-link" href="https://www.youtube.com/@Feartheparanormal" target="_blank"
+              >
+              Watch Now...
+            </a>
+          </h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/r7N0MB0ucfo?si=BiUv1rU7XwPPeX02"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/5Ke7ZZ-UX58?si=zm_gCDxCxKMT7hQR"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+   </article>
+
+    <div class="border"></div>
+      </section>
+
+      <aside class="mission-section">
+        <div class="container mission-inner">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="mission-text">
+                <h4 class="text-center">
+                  As a paranormal investigator, my mission is to explore, document, and analyze unexplained phenomena with
+                  professionalism, integrity, and respect for those affected...
+                </h4>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <div class="image-overlay-w">
+                <img src="images/benson.jpeg" alt="Paranormal Investigation"
+                  class="img-fluid rounded shadow dark-overlay mission-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="container-fluid p-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <h4 class="text-white mb-3 mb-md-0">Fear The Paranormal</h4>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="https://www.facebook.com/profile.php?id=61559466695831">
+            <i class="bi bi-facebook h4"></i>
+          </a>
+          <a href="https://www.youtube.com/@Feartheparanormal">
+            <i class="bi bi-youtube h4"></i>
+          </a>
+          <a href="https://www.tiktok.com/@feartheparanormal?lang=en">
+            <i class="bi bi-tiktok h4"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-twitter h4"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="text-white">
+      <p class="small text-white text-center mt-3 mb-0">&copy; 2025 Fear The Paranormal. All rights reserved.</p>
+    </footer>
+  </div>
+ 
   <script type="module" src="./javascripts/main.js"></script>
-</body>
+    </div>
+  </body>
 </html>

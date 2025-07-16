@@ -1,0 +1,27 @@
+$txt-white: #ffffff;
+$red-primary: #960505;
+$bg-black: #000000;
+$primary-font: Copperplate, Copperplate Gothic Light;
+
+footer {
+  background-color: $bg-black;
+  font-family: $primary-font;
+
+  a {
+    width: 100%;
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration-line: none;
+    color: $txt-white;
+
+    &:hover {
+      opacity: 0.7;
+      color: $red-primary;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}

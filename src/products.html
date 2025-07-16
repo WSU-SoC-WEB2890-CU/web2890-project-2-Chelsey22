@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Project 2 ..." />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link rel="stylesheet" href="./stylesheets/products.scss" />
+  </head>
+
+  <body>
+    <!-- Your HTML goes here -->
+    <nav class="navbar navbar-expand-lg text-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-3" href="#">
+          <img src="images/logo-4.jpg" alt="Fear the paranormal logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link link-header h4" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-header h4" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-header h4" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-header h4" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="product-container">
+        <header class="position-relative text-center m-5">
+          <!-- Cart Icon in Top-Right -->
+          <div class="cart-icon position-absolute top-0 end-0 me-3 mt-2 d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+            <span class="cart ms-1">0</span>
+          </div>
+
+          <h1 class="fw-bold">Browse our Collection</h1>
+          <p class="lead">Our Items Are Exclusively Built and Created By Tony</p>
+        </header>
+
+        <section class="stickers">
+          <div class="border"></div>
+          <h2 class="mt-4 text-center fw-bold">Stickers</h2>
+          <p class="mb-5 lead text-center">High-quality vinyl stickers. Durable and waterproof.</p>
+
+          <div class="row justify-content-center g-4">
+            <!-- sticker 1  -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker1.jpeg">
+                  <img src="images/sticker1.jpeg" class="card-img-top img-fluid product-img" alt="Sticker 1" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 1</h6>
+                  <p class="text-muted mb-2">$2.99</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 2 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker4.png">
+                  <img src="images/sticker4.PNG" class="card-img-top img-fluid product-img" alt="Sticker 2" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 2</h6>
+                  <p class="text-muted mb-2">$3.49</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 3 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker7.jpeg">
+                  <img src="images/sticker7.jpeg" class="card-img-top img-fluid product-img" alt="Sticker 3" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 3</h6>
+                  <p class="text-muted mb-2">$2.50</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 4 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker5.jpeg">
+                  <img src="images/sticker5.jpeg" class="card-img-top img-fluid product-img" alt="Sticker 3" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 4</h6>
+                  <p class="text-muted mb-2">$2.50</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 5 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker11.jpeg">
+                  <img src="images/sticker11.jpeg" class="card-img-top img-fluid product-img" alt="Sticker 5" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 5</h6>
+                  <p class="text-muted mb-2">$2.50</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 6 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker10.jpg">
+                  <img src="images/sticker10.jpg" class="card-img-top img-fluid product-img" alt="Sticker 6" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 6</h6>
+                  <p class="text-muted mb-2">$2.50</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 7 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker8.jpeg">
+                  <img src="images/sticker8.jpeg" class="card-img-top img-fluid product-img" alt="Sticker 7" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 7</h6>
+                  <p class="text-muted mb-2">$2.50</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticker 8 -->
+            <div class="col-lg-3 col-sm-6">
+              <div class="card product-card shadow-sm border-0 h-100 text-center">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#previewModal" data-img="images/sticker6.jpeg">
+                  <img src="images/sticker6.jpeg" class="card-img-top img-fluid product-img" alt="Sticker 8" />
+                </a>
+                <div class="card-body py-3 px-2">
+                  <h6 class="card-title mb-1">Sticker 8</h6>
+                  <p class="text-muted mb-2">$2.50</p>
+                  <div class="d-flex justify-content-center align-items-center mb-2">
+                    <input type="number" class="form-control form-control-sm w-50 me-2" value="1" min="1" />
+                    <button class="btn btn-sm">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border"></div>
+        </section>
+
+        <section class="mt-5 apparel">
+          <h2 class="mt-4 text-center fw-bold">Apparel</h2>
+          <p class="mb-3 lead text-center">High-quality 100% cotton clothing.</p>
+          <div class="row justify-content-center g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="shirt-flip-container mx-auto"
+                onclick="this.querySelector('.shirt-flip-card').classList.toggle('flipped')"
+              >
+                <div class="shirt-flip-card">
+                  <div class="shirt-flip-front">
+                    <img src="images/shirt_front.jpg" alt="Shirt Front" class="img-fluid" />
+                  </div>
+                  <div class="shirt-flip-back">
+                    <img src="images/shirt_back.jpg" alt="Shirt Back" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="text-center mt-2">
+                  <h6>Fear Tee</h6>
+                  <p class="text-muted mb-1">$19.99</p>
+                  <button class="shirt-btn btn-sm">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-1 d-none d-lg-block"></div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="shirt-flip-container mx-auto"
+                onclick="this.querySelector('.shirt-flip-card').classList.toggle('flipped')"
+              >
+                <div class="shirt-flip-card">
+                  <div class="shirt-flip-front">
+                    <img src="images/glow_shirt.jpg" alt="Shirt Front" class="img-fluid" />
+                  </div>
+                  <div class="shirt-flip-back">
+                    <img src="images/glow_shirt.jpg" alt="Shirt Back" class="img-fluid" />
+                  </div>
+                </div>
+                <div class="text-center mt-2">
+                  <h6>Glow In The Dark Fear Tee</h6>
+                  <p class="text-muted mb-1">$19.99</p>
+                  <button class="shirt-btn btn-sm">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="border"></div>
+      </div>
+    </main>
+
+    <footer class="container-fluid p-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+        <h4 class="text-white mb-3 mb-md-0">Fear The Paranormal</h4>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="https://www.facebook.com/profile.php?id=61559466695831">
+            <i class="bi bi-facebook h4"></i>
+          </a>
+          <a href="https://www.youtube.com/@Feartheparanormal">
+            <i class="bi bi-youtube h4"></i>
+          </a>
+          <a href="https://www.tiktok.com/@feartheparanormal?lang=en">
+            <i class="bi bi-tiktok h4"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-twitter h4"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="text-white" />
+      <p class="small text-white text-center mt-3 mb-0">&copy; 2025 Fear The Paranormal. All rights reserved.</p>
+    </footer>
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <img src="" id="previewImg" class="w-100" alt="Preview" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>
