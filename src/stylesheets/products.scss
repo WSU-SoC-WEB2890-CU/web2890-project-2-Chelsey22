@@ -1,5 +1,5 @@
 $dark-red: rgb(181, 69, 69);
-$bg-sticker: rgb(187, 185, 185);
+$bg-sticker: rgb(25, 25, 25);
 $bg-black: #000000;
 $txt-white: #ffffff;
 
@@ -8,8 +8,14 @@ $primary-font: Copperplate, Copperplate Gothic Light;
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lilita+One&display=swap");
 @import "bootstrap/scss/bootstrap.scss";
 
+body {
+  background-color: $bg-sticker;
+}
+
 header {
   font-family: $primary-font;
+  color: $txt-white;
+  margin-left: 3rem;
 
   span {
     font-family: sans-serif;
@@ -17,8 +23,10 @@ header {
 }
 
 h2,
+h6,
 p {
   font-family: $primary-font;
+  color: $txt-white;
 }
 
 .btn {
@@ -40,7 +48,20 @@ p {
 }
 
 .stickers {
+  color: $txt-white;
   background-color: $bg-sticker;
+}
+
+.product-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.devices img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
 }
 
 .product-card {
@@ -60,6 +81,7 @@ p {
   perspective: 1000px;
   width: 250px;
   margin: 2rem auto;
+  color: $txt-white;
 
   .shirt-flip-card {
     position: relative;
@@ -103,6 +125,35 @@ p {
       border: 2px solid $dark-red;
       background-color: $txt-white;
       color: $bg-black;
+    }
+  }
+
+  .product-img,
+  .devices img {
+    max-height: 150px;
+  }
+
+  h2,
+  h6,
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .card-body {
+    padding: 1rem 0.5rem;
+  }
+
+  .shirt-flip-container {
+    width: 90%;
+    height: auto;
+
+    .shirt-flip-card {
+      height: 300px;
     }
   }
 }
