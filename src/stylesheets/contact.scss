@@ -31,13 +31,19 @@ header {
   justify-content: center;
   position: relative;
   font-family: $primary-font;
+  z-index: 0;
 
   &::before {
     content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #00000099;
-    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    background: url("../images/trees.jpeg") no-repeat center center;
+    background-size: cover;
   }
 
   .overlay {
