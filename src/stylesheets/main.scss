@@ -27,7 +27,7 @@ body {
 }
 
 .bg-overlay {
-  background: url("../images/trees.jpeg") no-repeat center center fixed;
+  background: url("../images/trees.jpeg") no-repeat center center;
   background-size: cover;
 
   &::before {
