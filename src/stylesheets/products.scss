@@ -1,0 +1,159 @@
+$dark-red: rgb(181, 69, 69);
+$bg-sticker: rgb(25, 25, 25);
+$bg-black: #000000;
+$txt-white: #ffffff;
+
+$primary-font: Copperplate, Copperplate Gothic Light;
+
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lilita+One&display=swap");
+@import "bootstrap/scss/bootstrap.scss";
+
+body {
+  background-color: $bg-sticker;
+}
+
+header {
+  font-family: $primary-font;
+  color: $txt-white;
+  margin-left: 3rem;
+
+  span {
+    font-family: sans-serif;
+  }
+}
+
+h2,
+h6,
+p {
+  font-family: $primary-font;
+  color: $txt-white;
+}
+
+.btn {
+  border: 1px solid $dark-red;
+  color: $txt-white;
+
+  &:hover {
+    border: 2px solid $dark-red;
+    background-color: $txt-white;
+    color: $bg-black;
+  }
+}
+
+.border {
+  position: relative;
+  height: 4px;
+  background-color: $dark-red;
+  margin: 2rem 0;
+}
+
+.stickers {
+  color: $txt-white;
+  background-color: $bg-sticker;
+}
+
+.product-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.devices img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.product-card {
+  background-color: $bg-black;
+  color: $txt-white;
+  .card-body {
+    background-color: $bg-black;
+  }
+
+  h6,
+  p {
+    font-family: sans-serif;
+  }
+}
+
+.shirt-flip-container {
+  perspective: 1000px;
+  width: 250px;
+  margin: 2rem auto;
+  color: $txt-white;
+
+  .shirt-flip-card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+    &.flipped {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .shirt-flip-front,
+  .shirt-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .shirt-flip-front img,
+  .shirt-flip-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .shirt-flip-back {
+    transform: rotateY(180deg);
+  }
+
+  .shirt-btn {
+    border: 2px solid $dark-red;
+    background-color: $bg-black;
+    color: $txt-white;
+
+    &:hover {
+      border: 2px solid $dark-red;
+      background-color: $txt-white;
+      color: $bg-black;
+    }
+  }
+
+  .product-img,
+  .devices img {
+    max-height: 150px;
+  }
+
+  h2,
+  h6,
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .card-body {
+    padding: 1rem 0.5rem;
+  }
+
+  .shirt-flip-container {
+    width: 90%;
+    height: auto;
+
+    .shirt-flip-card {
+      height: 300px;
+    }
+  }
+}
